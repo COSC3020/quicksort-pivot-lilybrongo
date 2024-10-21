@@ -19,3 +19,21 @@ quantitatively reason with them.
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+It is known that there is a 1/2 chance of choosing a good pivot value (Lecture 01 Sorting- slide 34). If we use the median-of-three method, the reason that there is a half chance of choosing a good pivot value is because there is a chance that the pivot will be less than or greater than that good pivot solection. The median-of-three pivot method chooses the first, middle, and last elements in the array, and out of these three it will return the median value. In order for it to be considered a good pivot, it has to create two partitions, one being at most a size of 3n/4 (Lecture 01 Sorting- slide 34). With this chosen method, there will be a 1/2 chance of being a good pivot. 
+
+Percentage calculations:
+
+Less than good pivot = L
+Good pivot = G
+More than good pivot = M
+
+With the Median-of-Three method, the possible arrays are:
+
+(LLL), (LLG), (LLM), (LGG), (LGM), (LGL), (LML), (LMM), (LMG)
+
+(GGG), (GGL), (GGM), (GLM), (GML), (GLL), (GMM), (GMG), (GLG)
+
+(MMM), (MML), (MMG), (MLL), (MGG), (MLG), (MGL), (MLM), (MGM)
+
+
